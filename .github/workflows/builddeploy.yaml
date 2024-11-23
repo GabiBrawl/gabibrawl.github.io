@@ -18,11 +18,11 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
     
-    # Step 2: Set up Node.js
+    # Step 2: Set up Node.js (Updated to use Node.js 20)
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 18  # Adjust based on your project needs
+        node-version: 20  # Updated to use Node.js 20
         cache: 'npm'
 
     # Step 3: Install dependencies
