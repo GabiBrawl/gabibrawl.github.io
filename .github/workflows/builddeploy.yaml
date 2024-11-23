@@ -34,8 +34,10 @@ jobs:
       run: npm run build
 
     # Step 5: Deploy to GitHub Pages
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Directory where your build files are output
+   - name: Deploy to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v3
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./dist  # Update this to your build output directory
+    publish_branch: gh-pages  # Set this to the branch you're deploying to
+
